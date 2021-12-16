@@ -16,12 +16,6 @@ public class Human {
 
     }
 
-    public Human(String name, String surname, int dateOfBirth) {
-        this.name = name;
-        this.surname = surname;
-        this.dateOfBirth = dateOfBirth;
-    }
-
     public Human(String name, String surname, int dateOfBirth, Human mother, Human father) {
         this.name = name;
         this.surname = surname;
