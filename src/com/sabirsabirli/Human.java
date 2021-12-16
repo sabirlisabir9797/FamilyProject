@@ -23,17 +23,13 @@ public class Human {
     }
 
     public Human(String name, String surname, int dateOfBirth, Human mother, Human father) {
-        this.name = name;
-        this.surname = surname;
-        this.dateOfBirth = dateOfBirth;
+        this(name, surname, dateOfBirth);
         this.mother = mother;
         this.father = father;
     }
 
     public Human(String name, String surname, int dateOfBirth, int iqLevel, Pet pet, Human mother, Human father, String[][] nonWorkingActs) {
-        this.name = name;
-        this.surname = surname;
-        this.dateOfBirth = dateOfBirth;
+        this(name, surname, dateOfBirth);
         if (iqLevel >= 0 && iqLevel <= 100)
             this.iqLevel = iqLevel;
         else System.out.println("IQ level must be in the range [0-100]");
